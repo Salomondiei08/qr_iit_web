@@ -1,0 +1,280 @@
+/*=======================================================================
+[01] Theme Default CSS 
+=========================================================================*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Poppins:300,400,500,600,700);
+html {
+  background: #ffffff;
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 50%;
+  }
+}
+body {
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: 'Open Sans', sans-serif;
+  vertical-align: baseline;
+  background-color: #f1f1f1;
+  color: #444444;
+  font-weight: 400;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Poppins', sans-serif;
+  margin: 0 0 20px 0;
+  color: #111111;
+  text-transform: capitalize;
+}
+h1 {
+  font-size: 40px;
+  line-height: 1.2;
+}
+h2 {
+  font-size: 30px;
+  line-height: 1.2;
+}
+h3 {
+  font-size: 22px;
+  line-height: 1.4;
+}
+p {
+  line-height: 1.7;
+  margin: 0 0 20px 0;
+}
+a {
+  text-decoration: none;
+}
+a:active,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+a:active,
+a:hover,
+a:focus {
+  outline: 0 none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+ul {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+/*=======================================================================
+[31] ScrollUp Style
+=========================================================================*/
+.scrollUp {
+  overflow: hidden;
+  position: fixed;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  bottom: -50px;
+  right: 45px;
+  text-align: center;
+  z-index: 9999;
+  background-color: #011fa2;
+  display: block;
+  font-size: 16px;
+  color: #ffffff;
+  -webkit-transition: all 0.5s cubic-bezier(0, 0, 0.15, 1.88);
+  -moz-transition: all 0.5s cubic-bezier(0, 0, 0.15, 1.88);
+  -ms-transition: all 0.5s cubic-bezier(0, 0, 0.15, 1.88);
+  -o-transition: all 0.5s cubic-bezier(0, 0, 0.15, 1.88);
+  transition: all 0.5s cubic-bezier(0, 0, 0.15, 1.88);
+}
+.scrollUp i {
+  display: inline-block;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.scrollUp:hover,
+.scrollUp:focus {
+  color: #ffffff;
+}
+.scrollUp:hover i,
+.scrollUp:focus i {
+  -webkit-animation: toBottomFromTop 0.5s forwards;
+  animation: toBottomFromTop 0.5s forwards;
+}
+.scrollUp.back-top {
+  bottom: 20px;
+}
+@keyframes toBottomFromTop {
+  49% {
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+  51% {
+    opacity: 1;
+  }
+}
+/***********************************************************************/
+h2.title-bar {
+  position: relative;
+  margin-bottom: 40px;
+  display: inline-block;
+}
+h2.title-bar:before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  z-index: 1;
+  background-color: #011fa2;
+  bottom: -10px;
+  left: 0;
+}
+/***********************************************************************/
+.header-area {
+  text-align: center;
+}
+.header-area h1 {
+  margin-bottom: 30px;
+}
+.box-layout {
+  margin-top: 40px;
+  padding: 50px 80px;
+  background-color: #FFFFFF;
+}
+.btn-custom {
+  white-space: pre-wrap;
+}
+.btn-custom span {
+  margin-right: 10px;
+}
+ul.item-list li {
+  margin-bottom: 10px;
+}
+ul.item-list li span {
+  font-weight: 600;
+  color: #011fa2;
+}
+.item-link {
+  color: #013fcc;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.item-link:hover {
+  color: #011fa2;
+}
+.col-left {
+  background-color: #111111;
+  box-shadow: 0 0 15px #bcbcbc;
+  height: 100%;
+  left: 0;
+  min-height: 100%;
+  position: fixed;
+  width: 255px;
+  z-index: 100;
+}
+.col-left .site-logo {
+  padding: 30px 15px 15px;
+}
+.col-left ul {
+  color: #ffffff;
+  font-size: 15px;
+  list-style-type: decimal;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  margin-top: 0;
+  padding-left: 0;
+}
+.col-left ul li {
+  margin: 0px;
+}
+.col-left ul li a {
+  color: #ffffff;
+  display: block;
+  padding: 8px;
+}
+.col-left ul li a:hover {
+  background: #f1f1f1;
+  color: #111111;
+}
+.col-left ul li.current a {
+  background: #f1f1f1;
+  color: #111111;
+}
+.col-right {
+  margin-left: 282px;
+  margin-right: 30px;
+}
+.col-right img {
+  box-shadow: 0 0 7px #b8b8b8;
+  max-width: 99%;
+  padding: 5px;
+}
+@media all and (max-width: 991px) {
+  .col-left {
+    width: 230px;
+  }
+  .col-right {
+    margin-left: 250px;
+  }
+}
+.mobile-view {
+  display: none;
+}
+.desktop-view {
+  display: block;
+}
+.meanheader {
+  display: none;
+}
+.mean-bar {
+  position: fixed!important;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+@media all and (max-width: 767px) {
+  .col-left {
+    display: none;
+  }
+  .col-right {
+    margin: 20px;
+  }
+  .mobile-view {
+    display: block;
+  }
+  .desktop-view {
+    display: none;
+  }
+}
+footer {
+  text-align: center;
+  padding: 30px 0;
+}
+footer p {
+  margin-bottom: 0;
+}
+.text-wrap {
+  word-wrap: break-word;
+}
